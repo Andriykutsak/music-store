@@ -30,6 +30,7 @@ font-family: 'Roboto', sans-serif;
 	cursor: pointer;
 	height: 30px;
 	width: 30px;
+	display: none;
 }
 
 
@@ -40,12 +41,7 @@ font-family: 'Roboto', sans-serif;
 	background-color: #fff;
 	border-radius: 3px;
 }
-.anim{
-	 transform: translateX(0%);
-}
-.hide{
-	transform: translateX(100%);
-}
+
 .head-menu{
 	padding-top: 80px;
 	padding-bottom: 166px;
@@ -289,12 +285,26 @@ line-height: 24px;
 	}
 }
 @media screen and (max-width: 875px) {
-		
+		.header{
+			background-image: url('../img/header-sm.jpg');
+			-webkit-background-size: cover;
+			background-size: cover;
+		}
+		.responsive-btn{
+			display: block;
+		}
+	 .hide{
+				transform: translateX(-100%);
+
+		}
 	.head-menu-wrap .menu-item{
 		background-color: rgba(0,0,0,0.5);
 		padding: 10px 0;
 		text-align: center;
 		display: block;
+	
+		transform: translateX(0);
+	
 	}
 }
 .copyright{
